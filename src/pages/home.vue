@@ -1,19 +1,19 @@
 <template>
-    <div class="body">
-  <center>
-    <img src="logo-gis-changchun-info-vue.png" alt="" style="margin-top: 50px;width: 200px;">
-    <h1 style="font-weight: 100;font-size: 35px;">开源地图脚手架</h1>
-    <!--<h3 style="font-weight: 100;font-size: 35px;">vue 2 + element-ui 2</h3>-->
-    <div class="text-center">
-      <a>
-        <m-button @click="startsearch" type="info" size="max" round >开始查询</m-button>
-      </a>&nbsp;&nbsp;
-      <a>
-        <m-button @click="about" type="success" size="max" round plain>关于我</m-button>
-      </a>
-    </div>
-  </center>
-    </div>
+  <div class="body">
+    <center>
+      <img src="logo-gis-changchun-info-vue.png" alt="" style="margin-top: 50px;width: 200px;">
+      <h1 style="font-weight: 100;font-size: 35px;">开源地图脚手架</h1>
+      <!--<h3 style="font-weight: 100;font-size: 35px;">vue 2 + element-ui 2</h3>-->
+      <div class="text-center">
+        <a>
+          <m-button @click="startsearch" type="info" size="max" round >开始查询</m-button>
+        </a>&nbsp;&nbsp;
+        <a>
+          <m-button @click="about" type="success" size="max" round plain>关于我</m-button>
+        </a>
+      </div>
+    </center>
+  </div>
 </template>
 <script type="text/javascript">
 export default {

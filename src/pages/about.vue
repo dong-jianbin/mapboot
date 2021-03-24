@@ -9,7 +9,7 @@
         <div class="text-center">
           <p>Environment & UI：<a href="https://cn.vuejs.org/">vue</a> + <a href="http://element-cn.eleme.io/#/zh-CN">element</a></p>
           <p>Frame：<a href="https://github.com/mengdu/vue-element-admin-tpl">vue-element-admin-tpl</a></p>
-          <p>Document：<a href="https://haut-gis-org.github.io/gis-changchun-info-vue/#/">Geo-Info-Server</a></p>
+          <p>Document：<a href="https://github.com/dong-jianbin/mapboot">Geo-Info-Server</a></p>
         </div>
       </div></el-col>
 

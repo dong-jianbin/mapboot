@@ -12,7 +12,7 @@
     <div class="app-header-logo-box"
       :style="{height: headerHeight + 'px', color: theme.theme.activeTextColor}"
       >
-      <img src="http://pnabaentf.bkt.clouddn.com//logo-gis-changchun-info-vue.png" alt="" class="header-logo">
+      <img src="../assets/logo-gis-changchun-info-vue.png" alt="" class="header-logo">
       <span class="header-logo-text" >控制台</span>
     </div>
     <app-side :collapse="isCollapse" :theme="theme.theme"></app-side>
@@ -72,8 +72,11 @@ export default {
 </script>
 <style type="text/css">
   .page{
-    overflow-x: auto;
-    background-image: url("https://source.unsplash.com/random/1280x1280");
+    /* overflow-x: auto; */
+    /* background-image: url("https://source.unsplash.com/random/1280x1280"); */
+    background-image: url("../assets/global.png");
+    /* background-repeat:no-repeat; */
+    /* background-size:100% 100%; */
   }
   .app-container{
     margin: 0 auto;
