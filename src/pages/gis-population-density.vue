@@ -36,9 +36,10 @@
           // console.log(point)
         }
 
-        var SimulateData =
-          {max: max,
-            data: points}
+        var SimulateData = {
+          max: max,
+          data: points
+        }
 
         // 配置
         var cfg = {

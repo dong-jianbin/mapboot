@@ -7,23 +7,23 @@
       <el-col :span="6"><div class="grid-content bg-lucency">
         <h3 style="font-family:黑体 ;font-weight: 100;font-size: 20px;">开源声明</h3>
         <div class="text-center">
-          <p>Environment & UI：<a href="https://cn.vuejs.org/">vue</a> + <a href="http://element-cn.eleme.io/#/zh-CN">element</a></p>
+          <p>Environment & UI：<a href="https://cn.vuejs.org/">vue</a> + <a href="http://element-cn.eleme.io/#/zh-CN">element</a> + <a href="https://leafletjs.com/">leaflet</a></p>
           <p>Frame：<a href="https://github.com/mengdu/vue-element-admin-tpl">vue-element-admin-tpl</a></p>
-          <p>Document：<a href="https://github.com/dong-jianbin/mapboot">Geo-Info-Server</a></p>
+          <p>Document：<a href="https://github.com/dong-jianbin/mapboot">MapBoot</a></p>
         </div>
       </div></el-col>
 
 
       <el-col :span="8"><div class="grid-content bg-lucency">
-        <iframe width='300' height='220' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/4wOxK_0156QwE'></iframe>'
+        <iframe width='300' height='220' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://localhost:8088/gis-master-map'></iframe>'
       </div></el-col>
 
       <el-col :span="6"><div class="grid-content bg-lucency">
         <h3 style="font-family:黑体 ;font-weight: 100;font-size: 20px;">联系我们</h3>
         <div class="text-center">
-          <p>GitHub：<a href="https://github.com/haut-gis-org">Haut-Gis-Org</a></p>
-          <p>E-mail：<a href="mailto:songtianlun@frytea.com">songtianlun@frytea.com</a></p>
-          <p>Address：河南省郑州市中原区莲花街100号</p>
+          <p>GitHub：<a href="https://github.com/dong-jianbin/mapboot">MapBoot</a></p>
+          <p>E-mail：<a href="mailto:dongjb@asiainfo.com">dongjb@asiainfo.com</a></p>
+          <p>Address：哈尔滨市南岗区民益街78号联通大厦2103室</p>
         </div>
       </div></el-col>
 

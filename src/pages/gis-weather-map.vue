@@ -70,16 +70,20 @@
          * 天地图内容
          */
         let normalm = L.tileLayer.chinaProvider('TianDiTu.Normal.Map', {
-          attribution: 'Haut-Gis-Org © 天地图'
+          attribution: 'Haut-Gis-Org © 天地图',
+          key: 'dbeb4d20be0faecb77c6bd90f075f69d'
         })
         let normala = L.tileLayer.chinaProvider('TianDiTu.Normal.Annotion', {
-          attribution: 'Haut-Gis-Org © 天地图'
+          attribution: 'Haut-Gis-Org © 天地图',
+          key: 'dbeb4d20be0faecb77c6bd90f075f69d'
         })
         let imgm = L.tileLayer.chinaProvider('TianDiTu.Satellite.Map', {
-          attribution: 'Haut-Gis-Org © 天地图'
+          attribution: 'Haut-Gis-Org © 天地图',
+          key: 'dbeb4d20be0faecb77c6bd90f075f69d'
         })
         let imga = L.tileLayer.chinaProvider('TianDiTu.Satellite.Annotion', {
-          attribution: 'Haut-Gis-Org © 天地图'
+          attribution: 'Haut-Gis-Org © 天地图',
+          key: 'dbeb4d20be0faecb77c6bd90f075f69d'
         })
         let normal = L.layerGroup([normalm, normala])
         let image = L.layerGroup([imgm, imga])
@@ -95,13 +99,13 @@
         /**
          * 高德地图
          */
-        let Gaode = chinaProvider('GaoDe.Normal.Map', {
+        let Gaode = L.tileLayer.chinaProvider('GaoDe.Normal.Map', {
           attribution: 'Haut-Gis-Org © AMap'
         })
-        let Gaodimgem = chinaProvider('GaoDe.Satellite.Map', {
+        let Gaodimgem = L.tileLayer.chinaProvider('GaoDe.Satellite.Map', {
           attribution: 'Haut-Gis-Org © AMap'
         })
-        let Gaodimga = chinaProvider('GaoDe.Satellite.Annotion', {
+        let Gaodimga = L.tileLayer.chinaProvider('GaoDe.Satellite.Annotion', {
           attribution: 'Haut-Gis-Org © AMap'
         })
         let OpenStreetMap = L.tileLayer(
@@ -185,46 +189,45 @@
                 .then(response => {
                   // 获取到adcode
                   console.log(response)
-                  // let data = response.forecasts[0]
-                  // let weather = data.casts
+                  let data = response.forecasts[0]
+                  let weather = data.casts
                   axios
                     .get('/amapapi/v3/weather/weatherInfo?key=d019e2f0225bc0ec9ee2160602987a24&extensions=base&city=' + locadcode)
                     .then(responselive => {
                       console.log(responselive)
-                      // let liveweather = responselive.lives[0]
-                      // let weatherinfo = '城市/区：' + data.city + '</br>' +
-                      //   '归属：' + data.province + '省' + '</br>' +
-                      //   '实时天气' + '</br>' +
-                      //   '更新时间：' + liveweather.reporttime + '</br>' +
-                      //   '天气' + liveweather.weather + '</br>' +
-                      //   '温度：' + liveweather.temperature + '℃' + '</br>' +
-                      //   '风力：' + liveweather.windpower + '</br>' +
-                      //   '风向：' + liveweather.winddirection + '</br>' +
-                      //   '湿度：' + liveweather.humidity + '</br>' + '</br>' +
-                      //   '天气预报' + '</br>' +
-                      //   '<table border="1">' +
-                      //   '<tr>' +
-                      //   '<td>日期</td>' +
-                      //   '<td>天气</td>' +
-                      //   '<td>温度</td>' +
-                      //   '<td>风力</td>' +
-                      //   '<td>风向</td>' +
-                      //   '</tr>'
-                      // for (let i = 1; i < 4; i++) {
-                      //   weatherinfo += '<tr>' +
-                      //     '<td>' + weather[i].date + '</td>' +
-                      //     '<td>' + weather[i].nightweather + '转' + weather[i].dayweather + '</td>' +
-                      //     '<td>' + weather[i].nighttemp + '～' + weather[i].daytemp + '℃' + '</td>' +
-                      //     '<td>' + weather[i].daypower + '</td>' +
-                      //     '<td>' + weather[i].daywind + '</td>' +
-                      //     '</tr>'
-                      // }
-                      // weatherinfo += '</table>'
-                      // // console.log(nowweather)
-                      // // var popup = L.popup()
-                      // //   .setLatLng(e.latlng)
-                      // //   .setContent(weatherinfo)
-                      // //   .openOn(that.map)
+                      let liveweather = responselive.lives[0]
+                      let weatherinfo = '城市/区：' + data.city + '</br>' +
+                        '归属：' + data.province + '省' + '</br>' +
+                        '实时天气' + '</br>' +
+                        '更新时间：' + liveweather.reporttime + '</br>' +
+                        '天气' + liveweather.weather + '</br>' +
+                        '温度：' + liveweather.temperature + '℃' + '</br>' +
+                        '风力：' + liveweather.windpower + '</br>' +
+                        '风向：' + liveweather.winddirection + '</br>' +
+                        '湿度：' + liveweather.humidity + '</br>' + '</br>' +
+                        '天气预报' + '</br>' +
+                        '<table border="1">' +
+                        '<tr>' +
+                        '<td>日期</td>' +
+                        '<td>天气</td>' +
+                        '<td>温度</td>' +
+                        '<td>风力</td>' +
+                        '<td>风向</td>' +
+                        '</tr>'
+                      for (let i = 1; i < 4; i++) {
+                        weatherinfo += '<tr>' +
+                          '<td>' + weather[i].date + '</td>' +
+                          '<td>' + weather[i].nightweather + '转' + weather[i].dayweather + '</td>' +
+                          '<td>' + weather[i].nighttemp + '～' + weather[i].daytemp + '℃' + '</td>' +
+                          '<td>' + weather[i].daypower + '</td>' +
+                          '<td>' + weather[i].daywind + '</td>' +
+                          '</tr>'
+                      }
+                      weatherinfo += '</table>'
+                      L.popup()
+                        .setLatLng(e.latlng)
+                        .setContent(weatherinfo)
+                        .openOn(that.map)
                       that.closeFullScreen2() // 关闭加载中
                     })
                 })

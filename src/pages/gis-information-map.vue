@@ -38,14 +38,14 @@
         /**
          * 高德地图
          */
-        let Gaode = chinaProvider('GaoDe.Normal.Map', {
+        let Gaode = L.tileLayer.chinaProvider('GaoDe.Normal.Map', {
           attribution: 'Haut-Gis-Org © 高德地图',
           minZoom: 4
         })
-        let Gaodimgem = chinaProvider('GaoDe.Satellite.Map', {
+        let Gaodimgem = L.tileLayer.chinaProvider('GaoDe.Satellite.Map', {
           attribution: 'Haut-Gis-Org © 高德地图'
         })
-        let Gaodimga = chinaProvider('GaoDe.Satellite.Annotion', {
+        let Gaodimga = L.tileLayer.chinaProvider('GaoDe.Satellite.Annotion', {
           attribution: 'Haut-Gis-Org © 高德地图'
         })
         let Gaodimage = L.layerGroup([Gaodimgem, Gaodimga])

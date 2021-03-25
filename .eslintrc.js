@@ -27,7 +27,8 @@ module.exports = {
       // 允许声明未使用变量
       "vars": "local",
       // 参数不检查
-      "args": "none" 
+      "args": "none",
+      "varsIgnorePattern": "[china]"
     }],
      //空行最多不能超过100行
     "no-multiple-empty-lines": ['warn', {"max": 100}],
