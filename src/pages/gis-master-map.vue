@@ -473,7 +473,7 @@
     margin-top: 0
   }
   .info {
-    z-index:999;
+    z-index:10;
     padding: .75rem 1.25rem;
     margin-bottom: 1rem;
     border-radius: .6rem;
