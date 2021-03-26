@@ -39,20 +39,20 @@
          * 高德地图
          */
         let Gaode = L.tileLayer.chinaProvider('GaoDe.Normal.Map', {
-          attribution: 'Haut-Gis-Org © 高德地图',
+          attribution: 'Asiainfo-Gis-Open © 高德地图',
           minZoom: 4
         })
         let Gaodimgem = L.tileLayer.chinaProvider('GaoDe.Satellite.Map', {
-          attribution: 'Haut-Gis-Org © 高德地图'
+          attribution: 'Asiainfo-Gis-Open © 高德地图'
         })
         let Gaodimga = L.tileLayer.chinaProvider('GaoDe.Satellite.Annotion', {
-          attribution: 'Haut-Gis-Org © 高德地图'
+          attribution: 'Asiainfo-Gis-Open © 高德地图'
         })
         let Gaodimage = L.layerGroup([Gaodimgem, Gaodimga])
         // 图层
         let OpenStreetMap = L.tileLayer(
           'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Haut-Gis-Org © OpenStreetMap'
+            attribution: 'Asiainfo-Gis-Open © OpenStreetMap'
           }
         )
         this.baseLayers = {

@@ -167,7 +167,9 @@
       tipinputclick () {
         let that = this
         console.log('输入框被点击')
-        that.infowindowmapclick.close()// 关闭高级信息框
+        if (that.infowindowmapclick) {
+          that.infowindowmapclick.close()// 关闭高级信息框
+        }
         that.MplaceSearch.clear() // 清除搜索结果
         document.getElementById('panel').style.visibility = 'hidden'// 隐藏
         // let i = 0

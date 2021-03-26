@@ -49,40 +49,40 @@
          * 智图地图内容
          */
         let normalm1 = L.tileLayer.chinaProvider('Geoq.Normal.Map', {
-          attribution: 'Haut-Gis-Org © 智图地图'
+          attribution: 'Asiainfo-Gis-Open © 智图地图'
         })
         // let normalm2 = L.tileLayer.chinaProvider('Geoq.Normal.Color', {
-        //   attribution: 'Haut-Gis-Org © 智图地图'
+        //   attribution: 'Asiainfo-Gis-Open © 智图地图'
         // })
         let normalm3 = L.tileLayer.chinaProvider('Geoq.Normal.PurplishBlue', {
-          attribution: 'Haut-Gis-Org © 智图地图'
+          attribution: 'Asiainfo-Gis-Open © 智图地图'
         })
         let normalm4 = L.tileLayer.chinaProvider('Geoq.Normal.Gray', {
-          attribution: 'Haut-Gis-Org © 智图地图'
+          attribution: 'Asiainfo-Gis-Open © 智图地图'
         })
         let normalm5 = L.tileLayer.chinaProvider('Geoq.Normal.Warm', {
-          attribution: 'Haut-Gis-Org © 智图地图'
+          attribution: 'Asiainfo-Gis-Open © 智图地图'
         })
         // let normalm6 = L.tileLayer.chinaProvider('Geoq.Normal.Cold', {
-        //   attribution: 'Haut-Gis-Org © 智图地图'
+        //   attribution: 'Asiainfo-Gis-Open © 智图地图'
         // })
         /**
          * 天地图内容
          */
         let normalm = L.tileLayer.chinaProvider('TianDiTu.Normal.Map', {
-          attribution: 'Haut-Gis-Org © 天地图',
+          attribution: 'Asiainfo-Gis-Open © 天地图',
           key: 'dbeb4d20be0faecb77c6bd90f075f69d'
         })
         let normala = L.tileLayer.chinaProvider('TianDiTu.Normal.Annotion', {
-          attribution: 'Haut-Gis-Org © 天地图',
+          attribution: 'Asiainfo-Gis-Open © 天地图',
           key: 'dbeb4d20be0faecb77c6bd90f075f69d'
         })
         let imgm = L.tileLayer.chinaProvider('TianDiTu.Satellite.Map', {
-          attribution: 'Haut-Gis-Org © 天地图',
+          attribution: 'Asiainfo-Gis-Open © 天地图',
           key: 'dbeb4d20be0faecb77c6bd90f075f69d'
         })
         let imga = L.tileLayer.chinaProvider('TianDiTu.Satellite.Annotion', {
-          attribution: 'Haut-Gis-Org © 天地图',
+          attribution: 'Asiainfo-Gis-Open © 天地图',
           key: 'dbeb4d20be0faecb77c6bd90f075f69d'
         })
         let normal = L.layerGroup([normalm, normala])
@@ -91,32 +91,32 @@
          * 谷歌
          */
         let normalMap = L.tileLayer.chinaProvider('Google.Normal.Map', {
-          attribution: 'Haut-Gis-Org © Google Map'
+          attribution: 'Asiainfo-Gis-Open © Google Map'
         })
         let satelliteMap = L.tileLayer.chinaProvider('Google.Satellite.Map', {
-          attribution: 'Haut-Gis-Org © Google Map'
+          attribution: 'Asiainfo-Gis-Open © Google Map'
         })
         /**
          * 高德地图
          */
         let Gaode = L.tileLayer.chinaProvider('GaoDe.Normal.Map', {
-          attribution: 'Haut-Gis-Org © AMap'
+          attribution: 'Asiainfo-Gis-Open © AMap'
         })
         let Gaodimgem = L.tileLayer.chinaProvider('GaoDe.Satellite.Map', {
-          attribution: 'Haut-Gis-Org © AMap'
+          attribution: 'Asiainfo-Gis-Open © AMap'
         })
         let Gaodimga = L.tileLayer.chinaProvider('GaoDe.Satellite.Annotion', {
-          attribution: 'Haut-Gis-Org © AMap'
+          attribution: 'Asiainfo-Gis-Open © AMap'
         })
         let OpenStreetMap = L.tileLayer(
           'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Haut-Gis-Org © OpenStreetMap'
+            attribution: 'Asiainfo-Gis-Open © OpenStreetMap'
           }
         )
         let MapBox =
           L.tileLayer(
             'https://api.mapbox.com/styles/v1/kengqiangxia/cj5jbah540hlj2rpgh3xptiek/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia2VuZ3FpYW5neGlhIiwiYSI6ImNqNWpiMWZ5ZTIxYzgyd3BrYTN2NDN5aXEifQ.bqY03lR_2LZ0fttPOJ4jyw', {
-              attribution: 'Haut-Gis-Org © <a href="http://mapbox.com">Mapbox</a>'
+              attribution: 'Asiainfo-Gis-Open © <a href="http://mapbox.com">Mapbox</a>'
             })
         let Gaodimage = L.layerGroup([Gaodimgem, Gaodimga])
         let baseLayers = {

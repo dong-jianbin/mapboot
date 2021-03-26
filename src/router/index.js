@@ -40,7 +40,7 @@ export default new Router({
         {path: '/dev-master-map', name: 'dev-master-map', component: page('dev-master-map')},
         {path: '/dev-translate', name: 'dev-translate', component: page('dev-translate')},
         {path: '/dev-search', name: 'dev-search', component: page('dev-search')},
-        {path: '/Leaflet', name: 'Leaflet', component: page('Leaflet')},
+        {path: '/gis-geo-edit', name: 'gis-geo-edit', component: page('gis-geo-edit')},
         {path: '/Random', name: 'Random', component: page('Random')}
       ]
     },

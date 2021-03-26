@@ -23,6 +23,7 @@ module.exports = {
     'generator-star-spacing': 0,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    "wrap-iife": 0,
     "no-unused-vars": ['warn', { 
       // 允许声明未使用变量
       "vars": "local",

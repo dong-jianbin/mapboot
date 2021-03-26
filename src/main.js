@@ -17,7 +17,7 @@ import 'nprogress/nprogress.css'
 import 'animate.css'
 import 'leaflet.markercluster/dist/MarkerCluster.css'
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css'
-
+import 'leaflet-draw/dist/leaflet.draw.css'
 
 import DropdownPlugin from './m/dropdown'
 import NavbarPlugin from './m/navbar'

@@ -59,17 +59,17 @@
         this.heatmapLayer.setData(SimulateData)
 
         var normalm = L.tileLayer.chinaProvider('GaoDe.Normal.Map', {
-          attribution: 'Haut-Gis-Org © 高德地图',
+          attribution: 'Asiainfo-Gis-Open © 高德地图',
           maxZoom: 18,
           minZoom: 5
         })
         var imgm = L.tileLayer.chinaProvider('GaoDe.Satellite.Map', {
-          attribution: 'Haut-Gis-Org © 高德地图',
+          attribution: 'Asiainfo-Gis-Open © 高德地图',
           maxZoom: 18,
           minZoom: 5
         })
         var imga = L.tileLayer.chinaProvider('GaoDe.Satellite.Annotion', {
-          attribution: 'Haut-Gis-Org © 高德地图',
+          attribution: 'Asiainfo-Gis-Open © 高德地图',
           maxZoom: 18,
           minZoom: 5
         })
@@ -80,7 +80,7 @@
         // 图层
         let OpenStreetMap = L.tileLayer(
           'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Haut-Gis-Org © OpenStreetMap'
+            attribution: 'Asiainfo-Gis-Open © OpenStreetMap'
           }
         )
 
